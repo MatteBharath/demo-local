@@ -1,0 +1,9 @@
+apiVersion: hyperlocal.build/v1
+kind: SharedService
+metadata:
+  name: cache
+  namespace: demo-local
+spec:
+  serviceType: CACHE
+  chartName: podinfo
+  version: "6.7.1"
