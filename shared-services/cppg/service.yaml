@@ -1,0 +1,12 @@
+apiVersion: hyperlocal.build/v1
+kind: SharedService
+metadata:
+  name: cppg
+  namespace: demo-local
+spec:
+  serviceType: DATABASE
+  chartName: hyperlocal-cell-cppg-helm
+  version: "0.0.0-local"
+  stateful: true
+  valueFiles:
+    - values/values.yaml
