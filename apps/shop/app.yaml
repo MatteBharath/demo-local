@@ -1,0 +1,14 @@
+apiVersion: hyperlocal.build/v1
+kind: App
+metadata:
+  name: shop
+spec:
+  cellRef: demo-local
+  workloadTag: demo
+  chart:
+    repo: "oci://ghcr.io/stefanprodan/charts"
+    name: podinfo
+    version: "6.7.1"
+  connections:
+    - name: db
+      to: DATABASE
