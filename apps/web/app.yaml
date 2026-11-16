@@ -1,1 +1,11 @@
-
+apiVersion: hyperlocal.build/v1
+kind: App
+metadata:
+  name: web
+spec:
+  cellRef: demo-local
+  workloadTag: demo
+  chart:
+    repo: "oci://ghcr.io/stefanprodan/charts"
+    name: podinfo
+    version: "6.7.1"
