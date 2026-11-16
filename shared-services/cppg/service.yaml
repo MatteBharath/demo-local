@@ -6,7 +6,7 @@ metadata:
 spec:
   serviceType: DATABASE
   chartName: hyperlocal-cell-cppg-helm
-  version: "0.0.0-local"
+  version: "0.0.1-local"
   stateful: true
   valueFiles:
     - values/values.yaml
